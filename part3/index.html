@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function add7(number)
+            {
+                let addResult = (number + 7);
+                console.log (addResult);
+                return addResult;
+            }
+            function multiply(num1, num2)
+            {
+                let multResult = num1 * num2;
+                console.log(multResult);
+                return multResult;
+            }
+            function capitalize(word)
+            {
+                let lowerWord = word.toLowerCase();
+                let first = lowerWord.charAt(0).toUpperCase();
+                let remaining = lowerWord.slice(1);
+                let capitalWord = first + remaining;
+                console.log(capitalWord);
+                return capitalWord;
+            }
+            function lastLetter(word)
+            {
+                let last = word.slice(-1);
+                console.log(last);
+                return last;
+            }
+            add7(5);
+            capitalize("sAndwich");
+            lastLetter("Burrito");
+        </script>
+    </body>
+</html>
